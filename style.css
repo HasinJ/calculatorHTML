@@ -1,0 +1,29 @@
+#grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: dimgray;
+  border-radius: 5px;
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#grid div{ /*each block*/
+  padding-top: 30px;
+  background-color: gray;
+  border: 5px solid black;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 30px;
+  color: white
+}
+
+#grid #output{
+  padding-top: 20px;
+  grid-column: 1 / span 4;
+  text-align: right;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
