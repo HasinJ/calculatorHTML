@@ -41,12 +41,13 @@
 }
 
 #grid .number{  background-color: Maroon;}
-#grid .operator{  background-color: GoldenRod;}
 
-
-#grid .large{ grid-column: 1/ span 2;}
-#grid #zero{
-  grid-column: 1/ span 2;
+#grid .zero{
+  grid-column: 1 / span 2;
   background-color: Maroon;
   border: 5px solid transparent;
 }
+
+#grid .operator{  background-color: GoldenRod;}
+
+#grid .large{ grid-column: 1/ span 2;}
