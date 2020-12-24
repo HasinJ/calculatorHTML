@@ -1,7 +1,7 @@
 #grid {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  background-color: dimgray;
+  background-color: transparent;
   border-radius: 5px;
   width: 500px;
   height: 500px;
@@ -10,20 +10,43 @@
   margin-right: auto;
 }
 
-#grid div{ /*each block*/
-  padding-top: 30px;
-  background-color: gray;
-  border: 5px solid black;
-  border-radius: 15px;
+#grid button{ /*each block*/
+  padding: 15px 15px;
+  background-color: grey;
+  border: 5px solid transparent;
+  margin: 1px;
   text-align: center;
   font-size: 30px;
-  color: white
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  outline: none;
 }
 
+#grid button:hover:active{
+  transition-duration: 0.1s;
+  background-color: white;}
+#grid button:hover{ background-color: black;}
+
 #grid #output{
-  padding-top: 20px;
+  padding: 20px 20px;
+  background-color: transparent;
+  border: 2px solid grey;
+  border-radius: 15px;
   grid-column: 1 / span 4;
   text-align: right;
   font-size: 50px;
+  color: white;
   margin-bottom: 10px;
+}
+
+#grid .number{  background-color: Maroon;}
+#grid .operator{  background-color: GoldenRod;}
+
+
+#grid .large{ grid-column: 1/ span 2;}
+#grid #zero{
+  grid-column: 1/ span 2;
+  background-color: Maroon;
+  border: 5px solid transparent;
 }
